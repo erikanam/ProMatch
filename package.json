@@ -1,0 +1,48 @@
+{
+  "name": "promatch",
+  "version": "1.0.0",
+  "description": "A full-stack app that matches users with projects based on their skills. Please note, this is a work in progress, and some features may be incomplete or subject to change.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "concurrently -k -n reg,user,proj,match -c green,cyan,magenta,yellow \"npm run dev --prefix registration_service\" \"npm run dev --prefix user_service\" \"npm run dev --prefix project_service\" \"npm run dev --prefix match_service\""
+  },
+  "dependencies": {
+    "accepts": "^2.0.0",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "cookie": "^0.7.2",
+    "cookie-signature": "^1.2.2",
+    "cors": "^2.8.5",
+    "debug": "^4.4.0",
+    "dotenv": "^16.5.0",
+    "escape-html": "^1.0.3",
+    "express": "^5.1.0",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash.includes": "^4.3.0",
+    "lodash.isboolean": "^3.0.3",
+    "lodash.isinteger": "^4.0.4",
+    "lodash.isnumber": "^3.0.3",
+    "lodash.isplainobject": "^4.0.6",
+    "lodash.isstring": "^4.0.1",
+    "lodash.once": "^4.1.1",
+    "on-finished": "^2.4.1",
+    "pg": "^8.15.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikanam/ProMatch.git"
+  },
+  "keywords": [],
+  "author": "Erika Precia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erikanam/ProMatch/issues"
+  },
+  "homepage": "https://github.com/erikanam/ProMatch#readme"
+}
