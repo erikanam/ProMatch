@@ -5,7 +5,7 @@ const projectRoutes = require('./projectRoutes');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 4002; // if no env, fallback to 4002
+const port = process.env.PORT || 4002; 
 
 app.use(express.json());
 
